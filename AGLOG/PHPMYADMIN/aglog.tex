@@ -1,0 +1,276 @@
+% phpMyAdmin LaTeX Dump
+% version 4.9.1
+% https://www.phpmyadmin.net/
+%
+% Host: localhost
+% Tempo de geração: 11/11/2019 às 18:36
+% Versão do servidor: 5.6.28-0ubuntu0.15.04.1
+% Versão do PHP: 5.6.4-4ubuntu6.4
+% 
+% Banco de dados: 'aglog'
+% 
+
+%
+% Estrutura: cadastro_cliente
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela cadastro\_cliente} \label{tab:cadastro_cliente-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela cadastro\_cliente (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cpf}} & bigint(11) & Não &  \\ \hline 
+email & varchar(45) & Sim & NULL \\ \hline 
+telefone & int(11) & Sim & NULL \\ \hline 
+nome & varchar(45) & Sim & NULL \\ \hline 
+ \end{longtable}
+
+%
+% Dados: cadastro_cliente
+%
+ \begin{longtable}{|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela cadastro\_cliente} \label{tab:cadastro_cliente-data} \\\hline \multicolumn{1}{|c|}{\textbf{cpf}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{telefone}} & \multicolumn{1}{|c|}{\textbf{nome}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela cadastro\_cliente (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cpf}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{telefone}} & \multicolumn{1}{|c|}{\textbf{nome}} \\ \hline \hline \endhead \endfoot
+3573138950 & a@a.com & 2147483647 & and \\ \hline 
+10716274906 & matheuscamarques@gmail.com & 2147483647 & Matheus Camargo \\ \hline 
+10716274908 & andersonfagundes@gmail.com & 2147483647 & Anderson Fagundes \\ \hline 
+12345678900 & a@a.com & 2147483647 & ana \\ \hline 
+80942555954 & parctb@gmail.com & 2147483647 & Sergio Kasuma \\ \hline 
+82989761853 & ande@fdff.com & 1122222222 & mio \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: endereco_cliente
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela endereco\_cliente} \label{tab:endereco_cliente-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela endereco\_cliente (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+logradouro & varchar(80) & Sim & NULL \\ \hline 
+numero & varchar(45) & Sim & NULL \\ \hline 
+complemento & varchar(45) & Sim & NULL \\ \hline 
+bairro & varchar(45) & Sim & NULL \\ \hline 
+cidade & varchar(45) & Sim & NULL \\ \hline 
+estado & varchar(2) & Sim & NULL \\ \hline 
+cep & int(11) & Sim & NULL \\ \hline 
+\textbf{\textit{cod\_endereco}} & int(11) & Não &  \\ \hline 
+cpf & bigint(11) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: endereco_cliente
+%
+ \begin{longtable}{|l|l|l|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela endereco\_cliente} \label{tab:endereco_cliente-data} \\\hline \multicolumn{1}{|c|}{\textbf{logradouro}} & \multicolumn{1}{|c|}{\textbf{numero}} & \multicolumn{1}{|c|}{\textbf{complemento}} & \multicolumn{1}{|c|}{\textbf{bairro}} & \multicolumn{1}{|c|}{\textbf{cidade}} & \multicolumn{1}{|c|}{\textbf{estado}} & \multicolumn{1}{|c|}{\textbf{cep}} & \multicolumn{1}{|c|}{\textbf{cod\_endereco}} & \multicolumn{1}{|c|}{\textbf{cpf}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela endereco\_cliente (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{logradouro}} & \multicolumn{1}{|c|}{\textbf{numero}} & \multicolumn{1}{|c|}{\textbf{complemento}} & \multicolumn{1}{|c|}{\textbf{bairro}} & \multicolumn{1}{|c|}{\textbf{cidade}} & \multicolumn{1}{|c|}{\textbf{estado}} & \multicolumn{1}{|c|}{\textbf{cep}} & \multicolumn{1}{|c|}{\textbf{cod\_endereco}} & \multicolumn{1}{|c|}{\textbf{cpf}} \\ \hline \hline \endhead \endfoot
+Rua do Camacuan & 252 & Casa & Uberaba & Curitiba & PR & 81550360 & 1 & 10716274906 \\ \hline 
+Rua do Camacuan & 252 & Casa & Uberaba & Curitiba & PR & 82800065 & 14 & 10716274908 \\ \hline 
+rua no & 58 & casa & taruma & curitiba & pr & 82800000 & 15 & 12345678900 \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: lote
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela lote} \label{tab:lote-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela lote (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_lote}} & int(11) & Não &  \\ \hline 
+cod\_usuario & int(11) & Não &  \\ \hline 
+data\_entrega & date & Não &  \\ \hline 
+status & int(11) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: lote
+%
+ \begin{longtable}{|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela lote} \label{tab:lote-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_lote}} & \multicolumn{1}{|c|}{\textbf{cod\_usuario}} & \multicolumn{1}{|c|}{\textbf{data\_entrega}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela lote (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_lote}} & \multicolumn{1}{|c|}{\textbf{cod\_usuario}} & \multicolumn{1}{|c|}{\textbf{data\_entrega}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline \endhead \endfoot
+4 & 5 & 2019-10-23 & 1 \\ \hline 
+5 & 3 & 2019-11-05 & 1 \\ \hline 
+6 & 3 & 0000-00-00 & 0 \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: nivel
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela nivel} \label{tab:nivel-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela nivel (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_nivel}} & int(11) & Não &  \\ \hline 
+nome & varchar(45) & Sim & NULL \\ \hline 
+ \end{longtable}
+
+%
+% Dados: nivel
+%
+ \begin{longtable}{|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela nivel} \label{tab:nivel-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_nivel}} & \multicolumn{1}{|c|}{\textbf{nome}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela nivel (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_nivel}} & \multicolumn{1}{|c|}{\textbf{nome}} \\ \hline \hline \endhead \endfoot
+1 & administrador \\ \hline 
+2 & motorista \\ \hline 
+3 & operador \\ \hline 
+4 & logistico \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: objeto
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela objeto} \label{tab:objeto-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela objeto (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_objeto}} & int(11) & Não &  \\ \hline 
+tamanho & float & Sim & NULL \\ \hline 
+distancia & float & Sim & NULL \\ \hline 
+preco & float & Sim & NULL \\ \hline 
+cod\_taxa & int(11) & Não &  \\ \hline 
+cpf\_origem & bigint(11) & Não &  \\ \hline 
+cpf\_destino & bigint(11) & Não &  \\ \hline 
+peso & float & Não &  \\ \hline 
+status & int(11) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: objeto
+%
+ \begin{longtable}{|l|l|l|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela objeto} \label{tab:objeto-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{tamanho}} & \multicolumn{1}{|c|}{\textbf{distancia}} & \multicolumn{1}{|c|}{\textbf{preco}} & \multicolumn{1}{|c|}{\textbf{cod\_taxa}} & \multicolumn{1}{|c|}{\textbf{cpf\_origem}} & \multicolumn{1}{|c|}{\textbf{cpf\_destino}} & \multicolumn{1}{|c|}{\textbf{peso}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela objeto (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{tamanho}} & \multicolumn{1}{|c|}{\textbf{distancia}} & \multicolumn{1}{|c|}{\textbf{preco}} & \multicolumn{1}{|c|}{\textbf{cod\_taxa}} & \multicolumn{1}{|c|}{\textbf{cpf\_origem}} & \multicolumn{1}{|c|}{\textbf{cpf\_destino}} & \multicolumn{1}{|c|}{\textbf{peso}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline \endhead \endfoot
+1 & 10 & 100 & 53.3333 & 1 & 10716274906 & 10716274908 & 50 & 2 \\ \hline 
+2 & 10 & 100 & 53.3333 & 1 & 10716274906 & 10716274908 & 50 & 1 \\ \hline 
+3 & 1 & 200 & 70.3333 & 1 & 10716274906 & 10716274908 & 10 & 1 \\ \hline 
+4 & 10 & 800 & 276.667 & 1 & 10716274906 & 10716274908 & 20 & 2 \\ \hline 
+6 & 10 & 100 & 38.3333 & 1 & 10716274906 & 10716274908 & 5 & 1 \\ \hline 
+8 & 1 & 120 & 43.6667 & 1 & 10716274908 & 10716274906 & 10 & 0 \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: objeto_lote
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela objeto\_lote} \label{tab:objeto_lote-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela objeto\_lote (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_lote\_objeto}} & int(11) & Não &  \\ \hline 
+cod\_objeto & int(11) & Não &  \\ \hline 
+cod\_lote & int(11) & Não &  \\ \hline 
+status & int(11) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: objeto_lote
+%
+ \begin{longtable}{|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela objeto\_lote} \label{tab:objeto_lote-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_lote\_objeto}} & \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{cod\_lote}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela objeto\_lote (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_lote\_objeto}} & \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{cod\_lote}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline \endhead \endfoot
+9 & 1 & 4 & 0 \\ \hline 
+10 & 2 & 4 & 0 \\ \hline 
+11 & 3 & 4 & 0 \\ \hline 
+12 & 4 & 4 & 0 \\ \hline 
+13 & 6 & 4 & 0 \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: passos
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela passos} \label{tab:passos-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela passos (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_passos}} & int(11) & Não &  \\ \hline 
+cod\_objeto & int(11) & Não &  \\ \hline 
+cep & bigint(20) & Não &  \\ \hline 
+hora & time & Não &  \\ \hline 
+data & date & Não &  \\ \hline 
+status & char(120) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: passos
+%
+ \begin{longtable}{|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela passos} \label{tab:passos-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_passos}} & \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{cep}} & \multicolumn{1}{|c|}{\textbf{hora}} & \multicolumn{1}{|c|}{\textbf{data}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela passos (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_passos}} & \multicolumn{1}{|c|}{\textbf{cod\_objeto}} & \multicolumn{1}{|c|}{\textbf{cep}} & \multicolumn{1}{|c|}{\textbf{hora}} & \multicolumn{1}{|c|}{\textbf{data}} & \multicolumn{1}{|c|}{\textbf{status}} \\ \hline \hline \endhead \endfoot
+1 & 1 & 81550360 & 19:55:00 & 2019-10-22 & Saida do Estoque \\ \hline 
+2 & 1 & 80010010 & 20:22:00 & 2019-10-22 & Chegou no CD \\ \hline 
+3 & 1 & 80010060 & 20:39:00 & 2019-10-22 & Saida do CD \\ \hline 
+5 & 1 & 81550360 & 18:36:35 & 2019-10-23 & Unidade de Distribuicao \\ \hline 
+7 & 1 & 81550360 & 23:05:47 & 2019-10-23 & Entregue destinatario \\ \hline 
+9 & 1 & 81550360 & 18:22:09 & 2019-11-11 & Receita Federal \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: taxas
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela taxas} \label{tab:taxas-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela taxas (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_taxa}} & int(11) & Não &  \\ \hline 
+taxa & float & Sim & NULL \\ \hline 
+ \end{longtable}
+
+%
+% Dados: taxas
+%
+ \begin{longtable}{|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela taxas} \label{tab:taxas-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_taxa}} & \multicolumn{1}{|c|}{\textbf{taxa}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela taxas (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_taxa}} & \multicolumn{1}{|c|}{\textbf{taxa}} \\ \hline \hline \endhead \endfoot
+1 & 0.3 \\ \hline 
+ \end{longtable}
+
+%
+% Estrutura: usuario
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Estrutura da tabela usuario} \label{tab:usuario-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline
+\endfirsthead
+ \caption{Estrutura da tabela usuario (continuação)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Coluna}} & \multicolumn{1}{|c|}{\textbf{Tipo}} & \multicolumn{1}{|c|}{\textbf{Nulo}} & \multicolumn{1}{|c|}{\textbf{Padrão}} & \multicolumn{1}{|c|}{\textbf{Comentários}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{cod\_usuario}} & int(11) & Não &  \\ \hline 
+nome & varchar(45) & Não &  \\ \hline 
+email & varchar(45) & Sim & NULL \\ \hline 
+senha & varchar(45) & Sim & NULL \\ \hline 
+cod\_nivel & int(11) & Não &  \\ \hline 
+ \end{longtable}
+
+%
+% Dados: usuario
+%
+ \begin{longtable}{|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Conteúdo da tabela usuario} \label{tab:usuario-data} \\\hline \multicolumn{1}{|c|}{\textbf{cod\_usuario}} & \multicolumn{1}{|c|}{\textbf{nome}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{senha}} & \multicolumn{1}{|c|}{\textbf{cod\_nivel}} \\ \hline \hline  \endfirsthead 
+\caption{Conteúdo da tabela usuario (continuação)} \\ \hline \multicolumn{1}{|c|}{\textbf{cod\_usuario}} & \multicolumn{1}{|c|}{\textbf{nome}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{senha}} & \multicolumn{1}{|c|}{\textbf{cod\_nivel}} \\ \hline \hline \endhead \endfoot
+3 & manolo & manolo@manolo.com & 123 & 2 \\ \hline 
+4 & rute & rute@rute.com & 123 & 2 \\ \hline 
+5 & lolo & lolo@lolo.com.br & 123 & 3 \\ \hline 
+8 & lol & lol@huio & 123 & 2 \\ \hline 
+9 & oio & aass@gggg & 123 & 2 \\ \hline 
+10 & a & a@a.com & 123 & 1 \\ \hline 
+ \end{longtable}
