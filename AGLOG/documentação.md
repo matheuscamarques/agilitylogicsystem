@@ -134,3 +134,5 @@ redireciona.php
 								 
 ?>
 ```
+O arquivo redireciona.php é responsável pelos logins no Sistema, esse método de login foi feita de forma intuitiva a implementação de um login mais complexo, fica como implemantações futuras. Mas acredito que a ideia por de trás do login é a mesma que fiz por intuição.
+
