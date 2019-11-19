@@ -175,18 +175,17 @@ Esse exemplo está relacionado a atualização de usuarios no sistema.
 
 excluir.php
 ```php
-	<?php
-		include "../../../config/connection.php";
-		$cod_usuario=$_POST["cod_usuario"];
+<?php
+	include "../../../config/connection.php";
+	$cod_usuario=$_POST["cod_usuario"];
 	
-		$sql = "DELETE FROM usuario WHERE cod_usuario = '$cod_usuario'";
-		$res = mysqli_query($con,$sql);
+	$sql = "DELETE FROM usuario WHERE cod_usuario = '$cod_usuario'";
+	$res = mysqli_query($con,$sql);
 		
-		if(mysqli_affected_rows($con)) {
-   			echo "Excluir realizada com sucesso...";
-		}
-		else echo "Erro ao excluir os dados:".mysqli_error($con);
-	
-	
+	if(mysqli_affected_rows($con)) {
+   		echo "Excluir realizada com sucesso...";
+	}
+	else echo "Erro ao excluir os dados:".mysqli_error($con);
+		
 ?>
 ```
