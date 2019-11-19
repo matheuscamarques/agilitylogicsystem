@@ -81,8 +81,13 @@ Nesse trecho temos o comportamento do Menu do sistema , ele é genérico ou seja
 <?php include "arquiteture/footer.php" ?>
 ```
 
+Nesse trecho de index padrão em todo o sistema podemos ver o uso de includes dos cabeçalhos rodapés e menus do sistema. Percebemos que o código do index ficou bem reduzido , podemos reduzir mais ainda se desejarmos , basta fazermos um acesso a página de forma externa, será corrigido em futuras implementações.
 
-
+Index.php Ideal
 ```php
+<?php include "arquiteture/acesso_restrito.php" ?>
+<?php include "arquiteture/header.php" ?>
+<article> <?php include($pagina[$pg]); ?> </article>
+<?php include "arquiteture/footer.php" ?>
 ```
-Nesse trecho de index padrão em todo o sistema podemos ver o uso de includes dos cabeçalhos rodapés e menus do sistema.
+Mais limpo não acham ?
