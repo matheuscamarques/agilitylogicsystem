@@ -268,7 +268,6 @@ De forma geral o pesquisar.php foi equivalente es todas as pesquisas do sistema.
 
 # Implementações Futuras
 
-
 1. Login a partir de dados do Banco de dados.
 2. Criptografia de senhas.
 3. Compactação dos arquivos.
