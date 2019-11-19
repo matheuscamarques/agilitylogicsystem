@@ -1,6 +1,6 @@
 Autor: Matheus de Camargo Marques
 
-O sistema web feito em PHP faz inserções , alterações e pesquisas no banco de dados Mysql. Aqui nesse documento deixo demonstrações das príncipais fuinções do sistema e como elas funcionam.
+O sistema web feito em PHP faz inserções , alterações e pesquisas no banco de dados Mysql. Aqui nesse documento deixo demonstrações das príncipais funções do sistema e como elas funcionam. Busquei os arquivos que são os mais genéricos assim quando se deparar com algo parecido esse documento vai te auxiliar de forma mais geral.
 
 # Aquivos de Arquiteture
 
@@ -139,6 +139,7 @@ O arquivo redireciona.php é responsável pelos logins no Sistema, esse método 
 
 Abaixo deixo exemplos do Crud , deixo apenas um exemplo pois em outras páginas apesar do nome ser diferente a ideia são as mesmas. Alterar , Pesquisar , Exluir e Pesquisar. 
 
+atualizar.php
 ```php
 <?php
 	include "../../../config/connection.php";
@@ -172,6 +173,20 @@ Abaixo deixo exemplos do Crud , deixo apenas um exemplo pois em outras páginas 
 
 Esse exemplo está relacionado a atualização de usuarios no sistema. 
 
+excluir.php
 ```php
-
+	<?php
+		include "../../../config/connection.php";
+		$cod_usuario=$_POST["cod_usuario"];
+	
+		$sql = "DELETE FROM usuario WHERE cod_usuario = '$cod_usuario'";
+		$res = mysqli_query($con,$sql);
+		
+		if(mysqli_affected_rows($con)) {
+   			echo "Excluir realizada com sucesso...";
+		}
+		else echo "Erro ao excluir os dados:".mysqli_error($con);
+	
+	
+?>
 ```
