@@ -189,3 +189,74 @@ excluir.php
 		
 ?>
 ```
+
+Como o próprio nome diz respeito a excluir determinada coisa do banco de dados , e nesse caso específico está relacionado a excluir um determinado usuário de sistema.
+
+inserir.php
+```php
+<?php
+	//FIXME
+	include "../../../config/connection.php";
+	$nome = $_POST["nome"];
+	$email = $_POST["email"];
+	$cod_nivel=$_POST["cod_nivel"];
+	$senha = $_POST["senha"]; 
+	$r_senha = $_POST["r_senha"];
+	
+	if($senha != $r_senha )
+	{
+		echo 'Senhas não são iguais'; 
+	}
+	else{	
+		$sql = "INSERT INTO usuario VALUES(0,'$nome','$email','$senha','$cod_nivel')";
+		$res = mysqli_query($con,$sql);
+	if(mysqli_affected_rows($con)){
+   		echo "<script>alert('Inserção realizada com sucesso...');</script>";
+   		echo "<script>location.href='../../administrador/index.php?pg=adicionar';</script>";
+	}
+		else echo "Erro ao inserir os dados:".mysqli_error($con);
+	}
+	
+   
+?>
+```
+Insere determinado usuário no sistema , vale resaltar aqui que é necessário implementar alguma criptografia pois a senha vem de forma literal o ideal é que seja codificada.
+
+pesquisar.php
+```php
+<?php
+	include "./../../config/connection.php";
+	$nome = @$_POST["nome"];
+	$sql = "SELECT *FROM usuario WHERE nome LIKE  '%$nome%' ";
+	$res = mysqli_query($con,$sql);
+	
+	if ($res->num_rows > 0) {
+   		 // output data of each row
+  		echo  "<table border='1'>";
+  			echo  "<tr>";
+  		 		echo "<th>CÓDIGO DO USUARIO</th>";
+   		 		echo "<th>NOME USUARIO</th>";
+   				echo "<th>E-MAIL</th>";
+   				 cho "<th>CODIGO NIVEL</th>";
+   			echo  "</tr>";
+  	 	echo "<tr>"
+		 
+    	while($row = $res->fetch_assoc()) {
+      	 	echo  "<td>".$row["cod_usuario"]."</td>";
+        	echo "<td>".$row["nome"]."</td>";
+       	 	echo "<td>".$row["email"]."</td>";
+        	echo "<td>".$row["cod_nivel"]."</td>";
+        	echo "</tr>";
+        	echo "<tr>";
+    	}    
+   	 echo "<tr>";
+    	 echo "</table>";
+	} else {
+    		echo "0 results";
+	}
+	
+	$con->close();
+?>
+
+```
+De forma geral o pesquisar.php foi equivalente es todas as pesquisas do sistema. Execeto onde havia necessisdades de uso de INNER Joins.
