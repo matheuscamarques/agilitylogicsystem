@@ -264,4 +264,12 @@ pesquisar.php
 ?>
 
 ```
-De forma geral o pesquisar.php foi equivalente es todas as pesquisas do sistema. Execeto onde havia necessisdades de uso de INNER Joins.
+De forma geral o pesquisar.php foi equivalente es todas as pesquisas do sistema. Execeto onde havia necessidades de uso de INNER Joins.
+
+# Implementações Futuras
+
+
+1. Login a partir de dados do Banco de dados.
+2. Criptografia de senhas.
+3. Compactação dos arquivos.
+4. Remodelar o Sistema para Javascript.
