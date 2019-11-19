@@ -137,3 +137,41 @@ redireciona.php
 ```
 O arquivo redireciona.php é responsável pelos logins no Sistema, esse método de login foi feita de forma intuitiva a implementação de um login mais complexo, fica como implemantações futuras. Mas acredito que a ideia por de trás do login é a mesma que fiz por intuição.
 
+Abaixo deixo exemplos do Crud , deixo apenas um exemplo pois em outras páginas apesar do nome ser diferente a ideia são as mesmas. Alterar , Pesquisar , Exluir e Pesquisar. 
+
+```php
+<?php
+	include "../../../config/connection.php";
+	$nome = $_POST["nome"];
+	$email = $_POST["email"];
+	$cod_nivel=$_POST["cod_nivel"];
+	$senha = $_POST["senha"]; 	
+	$r_senha = $_POST["r_senha"];
+	$cod_usuario = $_POST["cod_usuario"];
+	
+	if($senha != $r_senha )
+	{
+		echo 'Senhas não são iguais'; 
+	}
+	else{	
+		$sql = "UPDATE usuario SET nome = '$nome' , email = '$email',senha = '$senha' ,cod_nivel = '$cod_nivel' WHERE 			cod_usuario = '$cod_usuario' ";
+		$res = mysqli_query($con,$sql);
+		echo mysqli_error($con);
+		
+		if(mysqli_affected_rows($con)) {
+   			echo "Atualização realizada com sucesso...";
+  		        echo "<script>alert('Inserção realizada com sucesso...');</script>";
+ 			 // echo "<script>location.href='../../frentedecaixa/index.php?pg=atualizar_cliente';</script>";
+		}
+			else echo "Erro ao atualizar os dados:".mysqli_error($con);
+			//echo "<script>location.href='../../frentedecaixa/index.php?pg=atualizar_cliente';</script>";
+	}
+	
+?>
+```
+
+Esse exemplo está relacionado a atualização de usuarios no sistema. 
+
+```php
+
+```
