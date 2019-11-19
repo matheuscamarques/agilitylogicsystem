@@ -95,6 +95,7 @@ Mais limpo não acham ?
 redireciona.php
 ```php
 <?php 
+	//FIXME
 	session_start();
 			
 	$login = $_POST['email'] ;
