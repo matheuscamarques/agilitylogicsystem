@@ -1,0 +1,8 @@
+
+    Servidor: Localhost via UNIX socket
+    Tipo de servidor: MySQL
+    Conexão do servidor: O SSL não está sendo usado Documentação
+    Versão do servidor: 5.6.28-0ubuntu0.15.04.1 - (Ubuntu)
+    Versão de protocolo: 10
+    Usuário: aluno@localhost
+    Charset do servidor: cp1252 West European (latin1)

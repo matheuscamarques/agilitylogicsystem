@@ -1,0 +1,216 @@
+*{max-width: 1233px;
+    max-height: 600px;
+}
+header{
+    color: yellow;
+    background: brown;
+    padding: 50px;
+    width: 1233px;
+   
+    
+}
+
+header h1{
+    position: absolute;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 50px;
+    top: -20px;
+    left: 600px;
+    
+}
+
+header p{
+    position: absolute;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 25px;
+    top: 40px;
+    left: 570px;
+    
+}
+
+header p:hover{
+    position: absolute;
+    color: brown;
+    font-weight: bolder;
+    font-size: 25px;
+    top: 40px;
+    left: 570px;
+    
+}
+
+header h1:hover{
+    position: absolute;
+    color: brown;
+    font-weight: bolder;
+    font-size: 50px;
+    top: -20px;
+    left: 600px;
+    
+}
+
+
+footer{
+    color: yellow;
+    background: brown;
+    padding: 50px;   
+    width: 1233px;
+}
+
+article{
+
+background: #D3D3D3;
+padding: 100px;
+
+width: 942px;
+height: 945px;
+
+position: relative;
+left: 191px;
+
+}
+
+article h2{
+
+    position: relative;
+    top: -120px;
+    left: -50px;
+
+    }
+
+article p{
+
+    position: relative;
+    top: -130px;
+    left: -50px;
+    
+    }
+
+
+
+
+
+
+
+
+menu {
+    position: absolute;
+    background:#eee ;
+    padding: 20px;
+    top: 92px;
+    height: 410px;
+    width: 150px;
+  }
+  
+menu a {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  
+menu a:hover {
+    background-color: brown; /* Dark grey background on mouse-over */
+  }
+  
+menu a.active {
+    background-color: yellow; /* Add a green color to the "active/current" link */
+    color: brown;
+  }
+
+
+  form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.submit input {
+    background-color: brown;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+   
+    border: 1px solid;
+}
+
+textarea {
+    width: 280px;
+    height: 150px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+   
+    border: 1px solid;
+}
+
+form {
+    position: absolute;
+    left: 100px;
+    top:125px;
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    
+    max-width: 500px;
+}
+
+form h2{
+    left: 20px;
+}
+
+
+iframe{
+
+    position: relative;
+    top: -100px;
+    left: 440px;
+}
+
+.form{
+    position: relative;
+    top:-100px;
+    left:-60px;
+    
+}
+
+.form h2{
+    position: relative;
+    top:10px;
+    left: -2px;
+    
+}
+
+.objetoras{
+    position: relative;
+    left:135px;
+}
