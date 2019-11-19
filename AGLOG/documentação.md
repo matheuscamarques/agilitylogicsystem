@@ -1,4 +1,9 @@
-Autor: Matheus de Camargo Marques
+# Colégio Estadual Professora Maria Aguiar Teixeira
+
+## Documentação do Sistema AGLOG como crítério avaliativo na disciplina de programação.
+Autores: 
+1. Matheus de Camargo Marques
+2. Anderson Fagundes 
 
 O sistema web feito em PHP faz inserções , alterações e pesquisas no banco de dados Mysql. Aqui nesse documento deixo demonstrações das príncipais funções do sistema e como elas funcionam. Busquei os arquivos que são os mais genéricos assim quando se deparar com algo parecido esse documento vai te auxiliar de forma mais geral.
 
